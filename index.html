@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="siteTitle">农业无人机｜科幻绿色植保解决方案 – 知行农业AI</title>
+  <meta name="description" data-i18n="siteDesc" content="知行农业AI 提供轻/中/重三款高性价比植保无人机，融合科幻设计与绿色农业技术，实现精准、高效、可持续的农作物管理。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="lang-switch">
+      <button id="btn-zh">中文</button>
+      <button id="btn-en">EN</button>
+    </div>
+    <div class="hero-content">
+      <h1 data-i18n="heroTitle">AI耕种未来——智领绿色农业</h1>
+      <p data-i18n="heroSubtitle">轻／中／重三款高性价比植保无人机，开启绿色耕作新时代</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn" data-i18n="btnLearn">了解产品</a>
+        <a href="#contact" class="btn" data-i18n="btnContact">联系我们</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="products" class="products scroll-reveal">
+    <h2 data-i18n="productsTitle">我们的产品</h2>
+    <div class="product-cards">
+      <div class="card">
+        <h3 data-i18n="prodLightTitle">轻型机</h3>
+        <p data-i18n="prodLightDesc">机动灵活，果园/小块地首选</p>
+        <a href="products/light.html" class="btn-small" data-i18n="viewDetails">查看详情</a>
+      </div>
+      <div class="card">
+        <h3 data-i18n="prodMidTitle">中型机</h3>
+        <p data-i18n="prodMidDesc">最佳性价比，合作社标配</p>
+        <a href="products/mid.html" class="btn-small" data-i18n="viewDetails">查看详情</a>
+      </div>
+      <div class="card">
+        <h3 data-i18n="prodHeavyTitle">重型机</h3>
+        <p data-i18n="prodHeavyDesc">高效覆盖，大田场利器</p>
+        <a href="products/heavy.html" class="btn-small" data-i18n="viewDetails">查看详情</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact scroll-reveal">
+    <h2 data-i18n="contactTitle">联系我们</h2>
+    <form id="contactForm">
+      <label data-i18n="labelName">姓名
+        <input type="text" name="name" required placeholder="">
+      </label>
+      <label data-i18n="labelCompany">公司/农场
+        <input type="text" name="company" placeholder="">
+      </label>
+      <label data-i18n="labelContact">联系方式
+        <input type="text" name="contact" required placeholder="">
+      </label>
+      <label data-i18n="labelMessage">需求描述
+        <textarea name="message" rows="4"></textarea>
+      </label>
+      <button type="submit" class="btn" data-i18n="submit">提交</button>
+      <p id="formStatus"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ZhiXing AgriAI. <span data-i18n="allRights">All rights reserved.</span></p>
+  </footer>
+
+  <script src="lang/zh.json" type="application/json" id="zh"></script>
+  <script src="lang/en.json" type="application/json" id="en"></script>
+  <script src="script.js"></script>
+</body>
+</html>
